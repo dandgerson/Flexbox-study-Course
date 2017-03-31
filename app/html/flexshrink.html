@@ -1,0 +1,42 @@
+<html>
+  <head>
+      <title>Flexbox Grids</title>
+      <link rel="stylesheet" href="../css/showcase.css">
+      <link rel="stylesheet" href="../css/flexshrink.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<div><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Go home</a></div>
+
+    <h2>Property: <code>flex-shrink</code></h2>
+
+    <p>Default: <code>flex-shrink: 1</code> (flex items are allowed to shrink to some degree)</p>
+    <div class="container">
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 1</div>
+    </div>
+
+    <p>3, 4, and 5 are no longer allowed to shrink (<code>flex-shrink: 0</code>)</p>
+    <div class="shrink1 container">
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 0</div>
+      <div>flex-<br>shrink: 0</div>
+      <div>flex-<br>shrink: 0</div>
+      <div>flex-<br>shrink: 1</div>
+    </div>
+
+    <p>3 and 4 are allowed to shrink more compared to other flex items</p>
+    <div class="shrink2 container">
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 5</div>
+      <div>flex-<br>shrink: 1</div>
+      <div>flex-<br>shrink: 1</div>
+    </div>
+
+  </body>
+</html>
